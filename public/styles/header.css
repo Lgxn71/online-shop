@@ -1,0 +1,27 @@
+header {
+  width: 70%;
+  margin: auto;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#logo {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#links-container {
+  display: flex;
+}
+#links-container li {
+  list-style: none;
+  margin: 0 1rem;
+}
+hr {
+  margin: 0;
+  border: 1px solid #f2921d;
+  width: 100;
+}
