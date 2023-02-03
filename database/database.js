@@ -4,14 +4,12 @@ const mongodbClient = mongodb.MongoClient;
 let database;
 
 const connnectToDatabase = async () => {
-  const client = await mongodbClient.connect(
-    "mongodb://localhost:27017/animals"
-  );
+  const client = await mongodbClient.connect("mongodb://localhost:27017");
   database = client.db("online-shop");
 };
 const getdb = async () => {
   if (!database) {
-    throw { message: "Something went wrong with db" };
+    throw new Error("DB is not connected");
   }
   return database;
 };
