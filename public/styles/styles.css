@@ -59,4 +59,22 @@ a {
   cursor: pointer;
   background-color: transparent;
   color: var(--clr-orange-100);
+}
+
+main {
+  text-align: center;
+  width: 70%;
+  margin: 3rem auto;
+}
+main h1 {
+  text-align: center;
+  color: var(--clr-white-150);
+  font-size: 3rem;
+}
+main p {
+  color: var(--clr-white-150);
+  margin: 0.5rem;
+}
+main p a {
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */

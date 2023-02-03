@@ -59,3 +59,21 @@ a {
     color: var(--clr-orange-100);
   }
 }
+
+main {
+  text-align: center;
+  width: 70%;
+  margin: 3rem auto;
+  h1 {
+    text-align: center;
+    color: var(--clr-white-150);
+    font-size: 3rem;
+  }
+  p {
+    color: var(--clr-white-150);
+    margin: 0.5rem;
+    a {
+      display: inline-block;
+    }
+  }
+}
