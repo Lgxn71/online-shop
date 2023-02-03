@@ -1,30 +1,20 @@
+const User = require("../models/user-model");
+
 const getSignup = (req, res) => {
   res.render("customer/auth/signup");
 };
-const postSignup = (req, res) => {
-  const userInput = req.body;
-  const userEmail = userInput.email;
-  const userConfirmEmail = userInput["confirm-email"];
-  const userPassword = userInput.password;
+const postSignup = async (req, res) => {
+  const user = new User(
+    req.body.email,
+    req.body.password,
+    req.body.fullname,
+    req.body.street,
+    req.body.postalcode,
+    req.body.city
+  );
+  await user.signup();
 
-  const userFullName = userInput["full-name"];
-  const userStreet = userInput.street;
-  const userPostalCode = userInput["postal-code"];
-  const userCity = userInput.city;
-
-  if (
-    !userEmail ||
-    !userConfirmEmail ||
-    userEmail !== userConfirmEmail ||
-    !userPassword ||
-    !userFullName ||
-    !userStreet ||
-    !userPostalCode ||
-    !userCity ||
-    userPostalCode.length < 5 ||
-    userPassword.length < 6
-  ) {
-  }
+  res.redirect("/login");
 };
 const getLogin = (req, res) => {
   res.render("customer/auth/login");

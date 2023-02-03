@@ -3,11 +3,11 @@ const mongodbClient = mongodb.MongoClient;
 
 let database;
 
-const connnectToDatabase = async () => {
+connnectToDatabase = async () => {
   const client = await mongodbClient.connect("mongodb://localhost:27017");
   database = client.db("online-shop");
 };
-const getdb = async () => {
+getdb = () => {
   if (!database) {
     throw new Error("DB is not connected");
   }

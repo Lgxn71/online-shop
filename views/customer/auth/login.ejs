@@ -1,0 +1,30 @@
+
+    <%-include('../includes/head',{pageTitle:'Signup'}) %>
+    <link rel="stylesheet" href="/styles/signup.css"> 
+  </head>
+  <body>
+    <%-include('../includes/header')%>
+      <main>
+        <h1>Login</h1>
+        <section class="error-block">
+          <div>
+            <h3>Invalid Input</h3>
+            <p>Please check your input. Password must be at least 6 characters long, postal code must be 5 characters long</p>
+          </div>
+        </section>
+          <form class="form-signup" action="/signup" method="POST">
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" minlength="6" required>
+            </div>
+              <div class="btn-container">
+                <button class="btn-full" type="submit">Login</button>
+                <a class = "btn-empty" href="/signup">Signup instead</a>
+              </div>
+            </div>
+          </form>
+      </main>
+   
+<%-include('../includes/footer') %> 
