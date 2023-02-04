@@ -12,6 +12,7 @@
   color: var(--clr-red-300);
   margin: 0;
   padding: 2rem 2rem;
+  text-transform: uppercase;
 }
 .error-block p {
   color: var(--clr-red-250);
@@ -21,7 +22,8 @@
 }
 
 .form {
-  width: 50%;
+  width: 40%;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -48,4 +50,10 @@
 .form .signup-break {
   width: 96.5%;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 80%;
+  }
 }/*# sourceMappingURL=form.css.map */

@@ -1,37 +1,12 @@
 <header>
   <nav id="nav-bar">
     <a href="/" id="logo">WDE</a>
-    <ul id="links-container">
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
-        <a href="">Cart <span id="cart-cnt">0</span></a>
-      </li>
-      <li>
-        <a href="">Signup</a>
-      </li>
-      <li>
-        <a href="">Login</a>
-      </li>
-      <li>
-        <a href="">Orders</a>
-      </li>
-      <li>
-        <a href="">Manage Products</a>
-      </li>
-      <li>
-        <a href="">Manage Orders</a>
-      </li>
-      <li>
-        <% if(locals.isAuth) {%>
-        <form action="/logout" method="POST">
-          <input type="hidden" name="_csrf" value="<%=locals.csrfToken%>" />
-          <button class="btn-empty">Logout</button>
-        </form>
-        <%} %>
-      </li>
-    </ul>
+    <div id="controller"><%- include('nav-items') %></div>
+    <button id="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
-  <hr />
 </header>
+<aside id="mobile-menu"><nav><%- include('nav-items') %></nav></aside>

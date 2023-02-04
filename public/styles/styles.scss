@@ -12,6 +12,9 @@ html {
   --clr-white-150: #fffff0;
   --clr-white-190: #e6e6d7;
 
+  --clr-white-100: #3f3c3a;
+  --color-gray-700: #1f1a16;
+
   --clr-black-750: #242724;
   --clr-black-850: #181818;
 
@@ -62,7 +65,7 @@ a {
 
 main {
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 3rem auto;
   h1 {
     text-align: center;
@@ -75,5 +78,10 @@ main {
     a {
       display: inline-block;
     }
+  }
+}
+@media (min-width: 720px) {
+  main {
+    width: 100%;
   }
 }

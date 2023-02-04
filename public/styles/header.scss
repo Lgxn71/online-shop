@@ -1,6 +1,10 @@
 header {
-  width: 70%;
-  margin: auto;
+  position: static;
+  width: 100%;
+  max-width: 60rem;
+  height: 5rem;
+  border-bottom: 1px solid var(--clr-orange-100);
+  margin: 0 auto;
 }
 #nav-bar {
   display: flex;
@@ -25,13 +29,15 @@ header {
   align-items: center;
   li {
     list-style: none;
-    margin: 0 1rem;
     a {
       text-decoration: none;
       color: var(--clr-orange-100);
       transition: all 0.2s, ease-in-out 0.2s;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
       &:hover {
         color: var(--clr-orange-200);
+        background-color: var(--clr-white-100);
       }
     }
   }
@@ -46,5 +52,76 @@ header {
       background-color: var(--clr-orange-200);
       color: var(--clr-white-190);
     }
+  }
+}
+
+#mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+  width: 2.25rem;
+  background-color: transparent;
+  padding: 0;
+  height: 2.25rem;
+  span {
+    width: 2.25rem;
+    height: 0.2rem;
+    background-color: var(--clr-white-150);
+  }
+}
+#mobile-menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  main {
+    margin: 6rem;
+    #nav-bar {
+      display: none;
+    }
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #mobile-menu-btn {
+    display: flex;
+  }
+  #mobile-menu {
+    top: 5rem;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-gray-700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    nav {
+      height: 20rem;
+      width: 90%;
+      margin: 1rem auto;
+      #links-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li {
+          margin: 2rem auto;
+          a {
+            font-size: 1.75rem;
+          }
+          button{
+            padding: 1.5rem 2.5rem;
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+  #controller {
+    display: none;
   }
 }

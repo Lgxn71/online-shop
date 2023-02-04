@@ -10,6 +10,8 @@ html {
   --clr-red-100: #e8a2a2;
   --clr-white-150: #fffff0;
   --clr-white-190: #e6e6d7;
+  --clr-white-100: #3f3c3a;
+  --color-gray-700: #1f1a16;
   --clr-black-750: #242724;
   --clr-black-850: #181818;
   font-family: "Poppins", sans-serif;
@@ -63,7 +65,7 @@ a {
 
 main {
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 3rem auto;
 }
 main h1 {
@@ -77,4 +79,10 @@ main p {
 }
 main p a {
   display: inline-block;
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
