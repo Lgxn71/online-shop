@@ -19,6 +19,7 @@ const checkAuthStatusMiddle = require("./middlewares/check-auth");
 const baseRouter = require("./routes/base-routes");
 const productRouter = require("./routes/products-routes");
 const authRouter = require("./routes/auth-routes");
+const adminRouter = require("./routes/admin-routes");
 
 // . to look in current folder
 
@@ -39,6 +40,8 @@ app.use(checkAuthStatusMiddle);
 app.use(baseRouter);
 app.use(authRouter);
 app.use(productRouter);
+app.use(adminRouter);
+//check only for admin
 
 app.use(errorHandler);
 

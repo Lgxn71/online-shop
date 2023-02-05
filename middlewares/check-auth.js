@@ -4,8 +4,9 @@ checkAuthStatus = (req, res, next) => {
   if (!uid) {
     return next();
   }
-  res.locals.isAdmin = res.locals.uid = uid;
-  res.locals.isAuth = req.session.isAdmin ;
+  res.locals.uid = uid;
+  res.locals.isAuth = true;
+  res.locals.isAdmin = req.session.isAdmin;
   next();
 };
 // to make reusable everywhere

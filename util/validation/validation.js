@@ -1,26 +1,18 @@
-userCredentialsAreValid = (email, password) => {
-  return email && email.includes("@") && password && password.trim() >= 6;
-};
 isEmpty = (value) => {
   return !value || value.trim() === "";
 };
 
-userDetailsAreValid = (
-  email,
-  password,
-  fullname,
-  street,
-  postalcode,
-  city
-) => {
+userCredentialsAreValid = (email, password) => {
+  return email && email.includes("@") && password && password.trim() >= 6;
+};
+
+userDetailsAreValid = (email, password, fullname, street, postal, city) => {
   return (
     userCredentialsAreValid(email, password) &&
     !isEmpty(fullname) &&
     !isEmpty(street) &&
     !isEmpty(city) &&
-    postalcode &&
-    postalcode.trim() >= 6 &&
-    city
+    !isEmpty(postal)
   );
 };
 emailIsConfirmed = (email, confirmemail) => {

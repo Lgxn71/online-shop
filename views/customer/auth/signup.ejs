@@ -1,6 +1,7 @@
 
     <%-include('../../shared/includes/head',{pageTitle:'Signup'}) %>
     <link rel="stylesheet" href="/styles/form.css"> 
+    <script src="/scripts/mobile.js" defer></script>
   </head>
   <body>
     <%-include('../../shared/includes/header')%>
@@ -18,12 +19,14 @@
             <input type="hidden" name="_csrf" value="<%=locals.csrfToken%>">
             <div>
               <label for="email">Your Email</label>
-             
               <input type="email" id="email" name="email" value="<%=inputData.email%>" required>
               <label for="confirmemail">Confirm Email</label>
               <input type="email" id="confirmemail" name="confirmemail" value="<%=inputData.confirm%>" required>
               <label for="password">Password</label>
               <input type="password" name="password" id="password" minlength="6" value="<%=inputData.password%>" required>
+              <div>
+                <button type = "button" id="btn-gray">Reveal Password</button>
+              </div>
             </div>
             <hr class="signup-break">
             <div>

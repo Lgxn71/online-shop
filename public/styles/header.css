@@ -42,7 +42,7 @@ header {
 }
 #links-container li a:hover {
   color: var(--clr-orange-200);
-  background-color: var(--clr-white-100);
+  background-color: var(--clr-gray-300);
 }
 #links-container #cart-cnt {
   background-color: var(--clr-orange-100);
@@ -99,8 +99,8 @@ header {
     height: 100%;
     position: fixed;
     width: 100%;
-    background-color: var(--color-gray-700);
-    display: flex;
+    background-color: var(--clr-gray-700);
+    display: none;
     flex-direction: column;
     align-items: center;
   }

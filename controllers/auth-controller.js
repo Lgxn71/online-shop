@@ -30,6 +30,7 @@ postSignup = async (req, res, next) => {
     postalcode: req.body.postalcode,
     city: req.body.city,
   };
+
   if (
     !validation.userDetailsAreValid(
       req.body.email,

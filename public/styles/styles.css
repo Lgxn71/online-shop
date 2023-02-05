@@ -10,8 +10,8 @@ html {
   --clr-red-100: #e8a2a2;
   --clr-white-150: #fffff0;
   --clr-white-190: #e6e6d7;
-  --clr-white-100: #3f3c3a;
-  --color-gray-700: #1f1a16;
+  --clr-gray-300: #3f3c3a;
+  --clr-gray-700: #1f1a16;
   --clr-black-750: #242724;
   --clr-black-850: #181818;
   font-family: "Poppins", sans-serif;
@@ -45,22 +45,24 @@ a {
   cursor: pointer;
   background-color: var(--clr-orange-100);
   color: var(---clr-black-850);
+  transform: translateY(-4px);
 }
 
 .btn-full {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   background-color: var(--clr-orange-100);
   color: var(--clr-black-850);
   border: 1px solid var(--clr-orange-100);
   padding: 0.5rem 1rem;
   font: inherit;
   border-radius: 6px;
-  transition: all 0.2s, ease-in-out 0.2s;
+  transition: all 0.3s, ease 0.3s;
 }
 .btn-full:hover {
   cursor: pointer;
   background-color: transparent;
   color: var(--clr-orange-100);
+  transform: translateY(-4px);
 }
 
 main {
@@ -72,6 +74,10 @@ main h1 {
   text-align: center;
   color: var(--clr-white-150);
   font-size: 3rem;
+}
+main h2 {
+  text-align: center;
+  color: var(--clr-white-150);
 }
 main p {
   color: var(--clr-white-150);

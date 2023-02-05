@@ -30,7 +30,7 @@
   margin: 3rem auto;
   border-radius: 7px;
   div {
-    padding: 1.5rem 1.9rem;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -44,10 +44,32 @@
       height: 2rem;
       font-size: 1.5rem;
     }
+    textarea {
+      font: inherit;
+    }
   }
   .signup-break {
     width: 96.5%;
     margin: auto;
+  }
+}
+
+#image {
+  display: none;
+}
+#btn-gray {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  font: inherit;
+  color: var(--clr-white-150);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--clr-white-150);
+    color: var(--clr-gray-300);
+    transform: translateY(-4px);
   }
 }
 @media (max-width: 767px) {
