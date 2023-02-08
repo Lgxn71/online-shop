@@ -12,6 +12,7 @@ html {
   --clr-white-150: #fffff0;
   --clr-white-190: #e6e6d7;
 
+  --clr-gray-100: #cfc9c3;
   --clr-gray-300: #3f3c3a;
   --clr-gray-700: #1f1a16;
 
@@ -31,6 +32,12 @@ hr {
 }
 a {
   text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .btn-empty {
   background-color: transparent;
@@ -67,7 +74,7 @@ a {
 
 main {
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin: 3rem auto;
   h1 {
     text-align: center;
@@ -88,6 +95,7 @@ main {
 }
 @media (min-width: 720px) {
   main {
-    width: 100%;
+    width: 85%;
+    margin: 3rem auto;
   }
 }

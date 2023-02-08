@@ -44,7 +44,7 @@ header {
   color: var(--clr-orange-200);
   background-color: var(--clr-gray-300);
 }
-#links-container #cart-cnt {
+#links-container .cart-cnt {
   background-color: var(--clr-orange-100);
   color: var(--clr-white-150);
   margin-left: 0.2rem;
@@ -52,7 +52,7 @@ header {
   border-radius: 2rem;
   transition: all 0.2s, ease-in-out 0.2s;
 }
-#links-container #cart-cnt:hover {
+#links-container .cart-cnt:hover {
   background-color: var(--clr-orange-200);
   color: var(--clr-white-190);
 }
@@ -80,7 +80,7 @@ header {
 
 @media (max-width: 767px) {
   main {
-    margin: 6rem;
+    margin-top: 8rem;
   }
   main #nav-bar {
     display: none;

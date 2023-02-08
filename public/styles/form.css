@@ -49,6 +49,7 @@
 }
 .form div textarea {
   font: inherit;
+  font-size: 1.2rem;
 }
 .form .signup-break {
   width: 96.5%;
@@ -59,7 +60,7 @@
   display: none;
 }
 
-#btn-gray {
+.btn-gray {
   padding: 0.5rem 1rem;
   background-color: transparent;
   font: inherit;
@@ -69,10 +70,24 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#btn-gray:hover {
+.btn-gray:hover {
   background-color: var(--clr-white-150);
   color: var(--clr-gray-300);
   transform: translateY(-4px);
+}
+
+#image-upload-preview {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#image-upload-preview img {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 
 @media (max-width: 767px) {

@@ -41,7 +41,7 @@ header {
       }
     }
   }
-  #cart-cnt {
+  .cart-cnt {
     background-color: var(--clr-orange-100);
     color: var(--clr-white-150);
     margin-left: 0.2rem;
@@ -76,7 +76,7 @@ header {
 }
 @media (max-width: 767px) {
   main {
-    margin: 6rem;
+    margin-top: 8rem;
     #nav-bar {
       display: none;
     }

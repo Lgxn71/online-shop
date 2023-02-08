@@ -4,7 +4,9 @@
     <a href="/">Shop</a>
   </li>
   <li>
-    <a href="/cart"> Cart <span id="cart-cnt">0</span></a>
+    <a href="/cart">
+      Cart <span class="cart-cnt"><%=locals.cart.totalQuantity%></span></a
+    >
   </li>
   <% } %> <% if(!locals.isAuth) {%>
   <li>

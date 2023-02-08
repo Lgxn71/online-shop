@@ -2,6 +2,7 @@
     <%-include('../../shared/includes/head',{pageTitle:'Signup'}) %>
     <link rel="stylesheet" href="/styles/form.css"> 
     <script src="/scripts/mobile.js" defer></script>
+    <script src="/scripts/password.js" defer></script>
   </head>
   <body>
     <%-include('../../shared/includes/header')%>
@@ -25,7 +26,7 @@
               <label for="password">Password</label>
               <input type="password" name="password" id="password" minlength="6" value="<%=inputData.password%>" required>
               <div>
-                <button type = "button" id="btn-gray">Reveal Password</button>
+                <button type = "button" id ="revealButton" class="btn-gray">Show Password</button>
               </div>
             </div>
             <hr class="signup-break">
