@@ -21,6 +21,7 @@ getSignup = (req, res) => {
 };
 
 postSignup = async (req, res, next) => {
+
   const enteredData = {
     email: req.body.email,
     confirm: req.body.confirmemail,
@@ -30,6 +31,7 @@ postSignup = async (req, res, next) => {
     postalcode: req.body.postalcode,
     city: req.body.city,
   };
+  console.log(enteredData);
 
   if (
     !validation.userDetailsAreValid(

@@ -3,7 +3,9 @@ isEmpty = (value) => {
 };
 
 userCredentialsAreValid = (email, password) => {
-  return email && email.includes("@") && password && password.trim() >= 6;
+  return (
+    email && email.includes("@") && password && password.trim().length >= 6
+  );
 };
 
 userDetailsAreValid = (email, password, fullname, street, postal, city) => {
